@@ -47,6 +47,7 @@ a{
 
 ul li{
   list-style: none;
+  list-style-position: outside;
 }
 /* Header */
 
@@ -156,7 +157,7 @@ ul li{
 
   .card-info{
     padding: 50px;
-  }
+}
 
   .card-info span{
     margin-bottom: 10px;
@@ -178,25 +179,18 @@ ul li{
   ul li{
     font-size: 1.3rem;
     padding-bottom: 30px;
-  }
+    }
+    
 
   ul{
     padding-bottom: 50px;
   }
 
-  .outside li{
-  list-style-position: outside;
-  }
-
-  .card-info .btn{
+  .btn{
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 30px;
     color: #ffffff;
-  }
-
-  .card-info a{
-    color: #0061ff;
   }
 
   hr{
@@ -204,16 +198,13 @@ ul li{
     width: 50px;
   }
 
-  .card-info .bold{
+  .bold{
     font-size: 1.3rem;
     font-weight: bold;
+    padding-bottom: 20px;
   }
 
-  .fa-check{
-    color: #0061ff;
-  }
+    
 
-  li::before{
-    content: "<i class="fa-solid fa-check">";
-  }
 
+  
