@@ -3,3 +3,68 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root{
+  --blu: #0061ff;
+  --lightblu: #209ff0;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.debug{
+  background-color: lightcoral;
+  border: 1px dashed black;
+}
+
+.flex{
+  display: flex;
+}
+
+.btn{
+  padding: 15px 20px;
+  background-color: var(--blu);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Header */
+
+/* Header - Nav */
+.nav{
+  justify-content: space-between;
+  align-items: center;
+  height: 160px;
+  margin: 0 20px;
+}
+
+.nav-left span{
+  align-items: center;
+  margin-right: 50px;
+  font-size: 22px;
+}
+
+.nav-left img{
+  height: 30px;
+  margin-right: 40px;
+}
+
+.nav-right span{
+align-items: center;
+margin-left: 50px;
+font-size: 22px;
+}
+
+.nav-right a{
+}
+
+
+
+
+
+
+
