@@ -269,6 +269,28 @@ ul li{
     border: 1px solid black;
   }
 
+  /* Section Tab */
+  .tab{
+    flex-wrap: wrap;
+  }
 
+  .box{
+    padding: 30px;
+    width: calc(100% / 3);
+  }
 
-  
+  .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+
+  .box h3{
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
+
+  .box p{
+    font-size: 1.2rem;
+  }
