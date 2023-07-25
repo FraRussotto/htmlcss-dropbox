@@ -271,12 +271,13 @@ ul li{
 
   /* Section Tab */
   .tab{
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .box{
-    padding: 30px;
-    width: calc(100% / 3);
+    width: calc(85% / 3);
+    padding-bottom: 70px;
   }
 
   .box img{
@@ -293,4 +294,22 @@ ul li{
 
   .box p{
     font-size: 1.2rem;
+  }
+
+  /* Text+Link */
+  .text-link{
+
+    margin-top: 70px;
+    width: 60%;
+  }
+  .text-link p{
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+  }
+
+  .text-link a{
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: black;
   }
