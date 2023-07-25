@@ -5,7 +5,7 @@
 }
 
 :root{
-  --var: #0061ff;
+  --btn: #0061ff;
   --var: #b4d0e7;
   --var: #a2d39b;
   --var: #61082b;
@@ -50,7 +50,7 @@
 
 .btn{
   padding: 15px 20px;
-  background-color: var(--blu);
+  background-color: var(--btn);
 }
 
 a{
@@ -59,7 +59,7 @@ a{
 
 ul li{
   list-style: none;
-  list-style-position: outleft;
+  list-style-position: outside;
 }
 /* Header */
 
@@ -74,26 +74,28 @@ ul li{
   .nav-left span{
     align-items: center;
     margin-right: 50px;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .nav-left img{
     height: 30px;
     margin-right: 40px;
+    object-fit: contain;
   }
 
   .nav-right span{
   align-items: center;
   margin-left: 50px;
-  font-size: 22px;
+  font-size: 20px;
   }
 
-  .nav-right a{
+  .nav .nav-right .btn{
     color: white;
   }
-
+  
+  /* Jumbotron */
   .jumbotron{
-    background-color: var(--lightblu);
+    background-color: #b4d0e7
   }
 
   h1{
@@ -190,13 +192,13 @@ ul li{
     color: grey;
   }
 
-  ul li{
+  .card-info ul li{
     font-size: 1.3rem;
     padding-bottom: 30px;
     }
     
 
-  ul{
+  .card-info ul{
     padding-bottom: 50px;
   }
 
@@ -243,6 +245,7 @@ ul li{
   .picture{
     margin-top: 150px;
   }
+
   .image{
     justify-content: space-between;
     flex-basis: 80%;
@@ -250,7 +253,7 @@ ul li{
     height: 100%;  
   }
 
-  img{
+  .image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -280,6 +283,11 @@ ul li{
   }
 
   /* Section Tab */
+  .section-tab h2{
+    font-size: 3rem;
+    margin: 100px 0 50px 0;
+  }
+
   .tab{
     justify-content: space-between;
     flex-wrap: wrap;
@@ -325,18 +333,14 @@ ul li{
   }
 
   /* Section Square */
-  .banner{
-    max-height: 600px;
-    margin-top: 150px;
-  }
   .banner-square{
+    justify-content: space-between;
+    margin-top: 150px;
     width: 100%;
-    height: 100%;
   }
 
   .square-left,
-  .square-right,
-  .square-central{
+  .square-right{
     flex-wrap: wrap;
     flex-basis: calc(100% / 3);
     aspect-ratio: 1;
@@ -350,24 +354,25 @@ ul li{
   .square-min{
     width: 50%;
     height: 50%;
-    aspect-ratio: 1;
   }
   
   .square-min img{
     width: 100%;
     height: 100%;
+    scale: 0.5;
     filter: invert(1);
     object-fit: contain;
   }
 
   .square-max{
     padding: 100px;
-    width: 100%;
+    height: 100%;
     background-color: #f5f5f5;
+    overflow-y:hidden;
   }
   
   .square-max img{
-    width: 50%;
+    width: 100px;
     height: min-content;
     object-fit: contain;
   }
@@ -443,6 +448,7 @@ ul li{
 
   .tab-question{
     border-bottom: 1px solid black;
+    margin-bottom: 120px;
   }
 
   .question{
@@ -452,4 +458,40 @@ ul li{
     padding: 30px 30px 30px 0;
     font-weight: bold;
   }
+
+  /* Menu-info */
+  .bottom{
+    background-color: black;
+  }
+  .nav-info{
+    justify-content: space-between;
+    padding-top: 100px;
+    color: white;
+  }
+
+  .nav-info .menu ul li{
+    list-style: none;
+    margin: 10px 0;
+  }
+
+  .nav-info .menu p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+
+  .language{
+    font-size: 0.8rem;
+    color: lightgrey;
+    padding-bottom: 50px;
+  }
+
+  .language hr{
+    color: white;
+    width: 100px;
+  }
+  .language span{
+    margin: 0 10px;
+  }
+
 
