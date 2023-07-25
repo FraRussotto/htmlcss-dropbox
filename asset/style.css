@@ -48,6 +48,12 @@
   flex-direction: column;
 }
 
+.fixed{
+  position: fixed;
+  top: 0;
+  width: calc(100% - 40px);
+}
+
 .btn{
   padding: 15px 20px;
   background-color: var(--btn);
@@ -95,7 +101,8 @@ ul li{
   
   /* Jumbotron */
   .jumbotron{
-    background-color: #b4d0e7
+    background-color: #b4d0e7;
+    margin-top: 100px;
   }
 
   h1{
