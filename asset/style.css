@@ -175,7 +175,7 @@ ul li{
     margin-bottom: 50px;
   }
 
-  #plane span{
+  #plane > span{
     margin-right: 50px;
   }
 
@@ -249,35 +249,38 @@ ul li{
     border: 1px solid #d0d0d3;
   }
 
-  .info-long-card{
-    padding: 30px 50px;
+  .info{
+    margin-top: 30px;
+    padding: 0 30px;
   }  
 
-  .long-card .info-top{
+  .info .info-top{
     justify-content: space-between;
     align-items: center;
     font-size: 1.8rem;
   }
 
-  .long-card .info-top span{
+  .info-top span{
     font-weight: bold;
-  }
-  .info-top .btn{
-    font-size: 1.3rem;
     text-align: center;
+  }
+  .info .info-top a{
+    padding: 15px 30px;
+    font-size: 1.3rem;
     color: #ffffff;
     background-color: #0061ff;
-    margin-bottom: 20px;
   }
 
-  .info-bottom span:first-child{
+  .info-bottom span{
     font-weight: bold;
-    margin-bottom: 10px;
+  }
+
+  .info-bottom p{
+    font-size: 1.1rem;
+    margin: 50px 0 40px 0;
+    width: 60%;
   }
   
-  .info-bottom span:last-child{
-  }
-
   /* Section Img+Text */
   .picture{
     margin-top: 150px;
@@ -527,14 +530,15 @@ ul li{
 
   .answer{
     width: 95%;
-    margin: 0 auto;
+    margin: 10px auto;
     background-color: rgb(247, 243, 243);
     padding: 30px 30px;
+    border-radius: 10px;
 
     display: none;
   }
 
-  .tab-question:hover .answer{
+  .line:hover  .answer{
     display: block;
   }
 
