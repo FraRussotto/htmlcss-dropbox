@@ -137,7 +137,7 @@ ul li{
   }
 
   .jumbo-img img{
-    width: 80%;
+    width: 100%;
   }
 
   .jumbo-text p{
@@ -341,7 +341,7 @@ ul li{
   }
   
   .box:hover{
-    box-shadow: 0 0 5px 10px rgb(200, 200, 200);
+    box-shadow: 0 0 5px 5px rgb(200, 200, 200);
   }
 
   .box img{
@@ -497,6 +497,10 @@ ul li{
     background-color: white;
   }
 
+  .banner-link span:hover{
+    background-color: #e9e9eb;
+  }
+
   /* Section Question */
   .accordion h2{
     font-size: 3rem;
@@ -526,6 +530,7 @@ ul li{
     margin: 0 auto;
     background-color: rgb(247, 243, 243);
     padding: 30px 30px;
+
     display: none;
   }
 
