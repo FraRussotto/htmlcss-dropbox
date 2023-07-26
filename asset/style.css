@@ -115,21 +115,21 @@ ul li{
     font-weight: 800;
   }
 
-  .jumbo{
-    position: relative;
-    margin-top: 40px;
-  }
-
   .jumbo-text{
     flex-basis: 30%;
   }
 
   .jumbo-img{
-    width: 60%;
+    width: 70%;
+  }
+
+  .jumbo{
+    position: relative;
+    top: 50px;
   }
 
   .jumbo-img img{
-    width: 100%;
+    width: 80%;
   }
 
   .jumbo-text p{
@@ -137,7 +137,7 @@ ul li{
     font-size: 1.2rem;
   }
 
-  .jumbo-text a{
+  .jumbo .jumbo-text a{
     color: white;
     margin-bottom: 50px;
   }
@@ -151,22 +151,23 @@ ul li{
     color: white;
   }
 
-  .jumbo i{    
-    position: absolute;
-    bottom: 20px;
+  .jumbo .ancor{    
+    margin-bottom: 10px;
     font-size: 3rem;
+    position: absolute;
+    bottom: 50px;
   }
 
 
   /* Main */
   /* Card */
-  .plane h2{
+  #plane h2{
     font-size: 3rem;
     margin-top: 100px;
     margin-bottom: 50px;
   }
 
-  .plane span{
+  #plane span{
     margin-right: 50px;
   }
 
@@ -387,7 +388,7 @@ ul li{
   
   .square-min img{
     position: absolute;
-    width: 150px;
+    width: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -450,8 +451,8 @@ ul li{
 
   .square-min:hover,
   .active{
-    border: 15px solid rgba(255, 255, 255, 0.5);
-  }
+  box-shadow: inset 10px 10px 0px 0px rgba(0, 0, 0, 0.5);
+}
 
   /* Section Banner-prova */
   .banner-prova{
@@ -476,12 +477,12 @@ ul li{
   }
 
   /* Section Question */
-  .tab-question h2{
+  .accordion h2{
     font-size: 3rem;
     margin-bottom: 50px;
   }
 
-  .tab-question{
+  .accordion{
     border-bottom: 1px solid black;
     margin-bottom: 120px;
   }
@@ -492,6 +493,17 @@ ul li{
     border-top: 1px solid black;
     padding: 30px 30px 30px 0;
     font-weight: bold;
+  }
+
+  .answer{
+    background-color: rgb(247, 243, 243);
+    padding: 30px 10px;
+    border-radius: 20px 20px 0 0;
+    display: none;
+  }
+
+  .question:hover .answer{
+    display: block;
   }
 
   /* Menu-info */
