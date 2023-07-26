@@ -87,10 +87,17 @@ ul li{
     box-shadow: 0px 1px 10px lightgrey;  
   }
 
-  .nav-left span{
+  .nav-left,
+  .nav-right{
     align-items: center;
+  }
+
+  .nav-left span,
+  .nav-right span{
     margin-right: 50px;
     font-size: 20px;
+    line-height: 100px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
   }
 
   .nav-left img{
@@ -98,17 +105,18 @@ ul li{
     margin-right: 40px;
     margin-left: 20px;
     object-fit: contain;
-  }
-
-  .nav-right span{
-  align-items: center;
-  margin-left: 50px;
-  font-size: 20px;
+    line-height: 100px;
   }
 
   .nav .nav-right .btn{
     color: white;
     margin-right: 20px;
+  }
+
+  .nav-left span:hover,
+  .nav-right span:hover{
+    border-bottom: 3px solid rgba(0, 0, 0, 1);
+
   }
   
   /* Jumbotron */
