@@ -6,16 +6,16 @@
 
 :root{
   --btn: #0061ff;
-  --var: #b4d0e7;
-  --var: #a2d39b;
-  --var: #61082b;
-  --var: #0093ce;
-  --var: #ff1c1c;
-  --var: #f5f5f5;
-  --var: #d5001f;
-  --var: #b4d0e7;
-  --var: #0d2481;
-  --var: #ffd830;
+  --lightciano: #b4d0e7;
+  --green: #a2d39b;
+  --purple: #61082b;
+  --lightble: #0093ce;
+  --red: #ff1c1c;
+  --lightwhite: #f5f5f5;
+  --strongred: #d5001f;
+  --ciano: #b4d0e7;
+  --darkblu: #0d2481;
+  --yellow: #ffd830;
   
 }
  body{
@@ -510,16 +510,22 @@ ul li{
     border-top: 1px solid black;
     padding: 30px 30px 30px 0;
     font-weight: bold;
+    cursor: pointer;
+  }
+
+  .question:hover{
+    background-color: var(--lightciano);
   }
 
   .answer{
+    width: 95%;
+    margin: 0 auto;
     background-color: rgb(247, 243, 243);
-    padding: 30px 10px;
-    border-radius: 20px 20px 0 0;
+    padding: 30px 30px;
     display: none;
   }
 
-  .question:hover .answer{
+  .tab-question:hover .answer{
     display: block;
   }
 
