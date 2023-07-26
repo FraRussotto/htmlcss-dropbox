@@ -204,7 +204,7 @@ ul li{
   }
 
   .card-info{
-    padding: 50px;
+    padding: 30px;
 }
 
   .card-info span{
@@ -225,20 +225,16 @@ ul li{
   }
 
   .card-info ul li{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding-bottom: 30px;
     }    
-
-  .card-info ul{
-    padding-bottom: 50px;
-  }
 
   .card-btn{
     font-size: 1.3rem;
     text-align: center;
     color: #ffffff;
     background-color: #0061ff;
-    margin-bottom: 20px;
+    margin: 20px 0;
   }
 
   hr{
